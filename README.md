@@ -5,17 +5,18 @@
 A NodeJS server was authored in the KOA2 framework with TypeScript.
 
 Technologies Used:
-* KOA2
-* TypeScript
-* Travis CLI
-* Coveralls
-* Jasmine
-* Chai
-* Istanbul/NYC
-* Babel
-* Lodash
-* Nodemon
-* Docker
+* [KOA2](http://koajs.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Travis CLI](https://travis-ci.org/)
+* [Coveralls](https://coveralls.io/)
+* [Jasmine](https://jasmine.github.io/)
+* [Chai](http://www.chaijs.com/)
+* [Istanbul/NYC](https://github.com/istanbuljs/nyc)
+* [Babel](https://babeljs.io/)
+* [Lodash](https://lodash.com/)
+* [Nodemon](https://nodemon.io/)
+* [Docker](https://www.docker.com/)
+* [Swagger](https://swagger.io/)
 
 ## Prerequisites
 * Node.js (8+): recommend using [nvm](https://github.com/creationix/nvm)
