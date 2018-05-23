@@ -1,11 +1,10 @@
 import * as chai from 'chai';
-import { should } from 'chai';
+import { expect } from 'chai';
 import { server } from './../app/app';
 
 chai.use(require('chai-http'));
 
 describe('routes', () => {
-
   after(() => server.close());
 
   describe(`GET /`, () => {
@@ -14,8 +13,7 @@ describe('routes', () => {
         .request(server)
         .get(`/`)
         .end((err, res) => {
-          should().exist(err);
-          res.status.should.eql(401);
+          expect(res.status).to.eql(401);
           done();
         });
     });
@@ -32,11 +30,15 @@ describe('routes', () => {
         });
     });
   });
-
 });
 
-const isOk = (err: any, res: any, status: number = 200, type: string = 'application/json') => {
-  should().not.exist(err);
-  res.status.should.eql(status);
-  res.type.should.eql(type);
+const isOk = (
+  err: any,
+  res: any,
+  status: number = 200,
+  type: string = 'application/json'
+) => {
+  expect(err).to.not.exist;
+  expect(res.status).to.eql(status);
+  expect(res.type).to.eql(type);
 };
