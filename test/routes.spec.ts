@@ -5,7 +5,7 @@ import { server } from './../app/app';
 chai.use(require('chai-http'));
 
 describe('routes', () => {
-  after(() => server.close());
+  after(() => Promise.resolve(server.close()));
 
   describe(`GET /`, () => {
     it('should error on the default route with a 401', done => {

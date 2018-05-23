@@ -14,11 +14,12 @@ Technologies Used:
 * [Jasmine](https://jasmine.github.io/)
 * [Chai](http://www.chaijs.com/)
 * [Istanbul/NYC](https://github.com/istanbuljs/nyc)
-* [Babel](https://babeljs.io/)
 * [Lodash](https://lodash.com/)
 * [Nodemon](https://nodemon.io/)
 * [Docker](https://www.docker.com/)
 * [Swagger](https://swagger.io/)
+* [Bunyahn](https://github.com/trentm/node-bunyan)
+* [Koa Bunyan Logger](https://github.com/koajs/bunyan-logger/)
 
 ## Prerequisites
 
