@@ -10,7 +10,7 @@
     "lint": "node_modules/tslint/bin/tslint -c tslint.json -p tsconfig.json --force",
     "fix": "node_modules/tslint/bin/tslint -c tslint.json -p tsconfig.json --fix --force",
     "image:build": "docker build --tag koa-typescript-starter .",
-    "image:run": "docker run --rm -ti koa-typescript-starter",
+    "image:run": "docker run --rm -ti -p 3000:3000 koa-typescript-starter",
     "test": "NODE_ENV=test node_modules/mocha/bin/mocha -r ts-node/register ./test/**/*.spec.ts && exit 0",
     "coverage": "NODE_ENV=test node_modules/nyc/bin/nyc.js --reporter=html --reporter=text node_modules/mocha/bin/mocha --exit -r ts-node/register ./test/**/*.spec.ts",
     "coverage:coveralls": "NODE_ENV=test node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text-lcov node_modules/mocha/bin/mocha --exit -r ts-node/register ./test/**/*.spec.ts | coveralls"
