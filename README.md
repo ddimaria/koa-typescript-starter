@@ -9,7 +9,7 @@ Technologies Used:
 
 * [KOA2](http://koajs.com/)
 * [TypeScript](https://www.typescriptlang.org/)
-* [Travis CLI](https://travis-ci.org/)
+* [Travis CI](https://travis-ci.org/)
 * [Coveralls](https://coveralls.io/)
 * [Jasmine](https://jasmine.github.io/)
 * [Chai](http://www.chaijs.com/)
